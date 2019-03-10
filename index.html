@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SOAR | To Iceland and more</title>
+    <link rel="icon" type="image/ico" href="img/logoOnly.svg" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="mainContainer">
+      <header>
+        <a href="index.html">
+          <img src="img/logo.svg" alt="SOAR logo" class="logo">
+        </a>
+        <nav>
+          <a href="#" class="hide-desktop">
+            <img src="img/ham.svg" alt="toggle menu" class="toggleMenu" id="toggleMenu">
+          </a>
+          <ul class="hide-mobile">
+            <li><img src="img/close.svg" class="exit-btn hide-desktop" alt="exit menu"></li>
+            <li><a href="#">Book</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Charter</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="bookingSection">
+        <img src="img/background.jpg" alt="snow fall" class="bookingBackground">
+
+        <div class="bookingWindow-large">
+            <span class="headline-large hide-mobile">Book Your Next Adventure</span>
+        </div>
+
+        <div class="bookingWindow-small hide-desktop">
+          <span class="headline-small">Book Your Next Adventure</span>
+          <div class="inputGroup">
+            <label class="fromToLabel">From</label>
+            <p><input class="bookingInput" type="text" placeholder="Origin" required name="origin"></p>
+          </div>
+          <div class="inputGroup">
+            <label class="fromToLabel">To</label>
+            <p><input class="bookingInput" type="text" placeholder="Destination" required name="destination"></p>
+          </div>
+          <button class="goButton" onclick="go()"><span style ="color : #ffffff;">GO!</span></button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function go(){
+      }
+    </script>
+  </body>
+</html>

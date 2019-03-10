@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Andada');
+body {
+  margin: 0;
+  font-family: 'Andada', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer{
+  max-width: 1920px;
+}
+
+.logo{
+  width: 160px;
+}
+
+.hide-mobile{
+  display: none;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 1em 1em 1em;
+}
+
+.toggleMenu{
+  width: 30px;
+  margin-top: 25%;
+}
+
+.bookingSection{
+  margin-top: 1em;
+}
+
+.bookingBackground{
+  vertical-align: middle;
+  max-width: 100%;
+  min-width: 600px;
+  position:relative;
+}
+
+.bookingWindow-large{
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  transform: translate(0%,-50%);
+  display: block;
+}
+
+.bookingWindow-small{
+  position: absolute;
+  top: 120px;
+  left: 10%;
+  width: 80%;
+}
+
+.headline-large{
+  color: #ffffff;
+  background-size: 300px 100px;
+  background-color: #5EA8A7;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.63em;
+}
+
+.headline-small{
+  color: #ffffff;
+  background-color: #5EA8A7;
+  padding: 10px 10px 10px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.63em;
+}
+
+.inputGroup{
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.05);
+  color: #5e5e5e;
+  background: #ffffff;
+  width: 100%;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  align-self: stretch;
+  flex-basis: 100px;
+  flex-grow: 2;
+  flex-shrink: 1;
+  line-height: 1.15;
+  position: relative;
+  display: block;
+}
+
+.fromToLabel{
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 10px 0px 10px;
+  line-height: 1.25;
+}
+
+.bookingInput{
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #cccccc;
+  overflow: visible;
+  width: calc(100% - 20px);
+  margin: -15px 10px 10px 10px;
+  font-size: 14px;
+}
+
+.goButton{
+  border: 0px;
+  padding: 10px 25px 10px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #f4cc70
+}
+
+.goButton:active{
+  background-color: #5EA8A7;
+  transform: translateY(2px);
+}
+
+.goButton:hover{
+  background-color: #5EA8A7;
+}
