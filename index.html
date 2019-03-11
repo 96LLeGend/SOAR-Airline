@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SOAR | To Iceland and more</title>
     <link rel="icon" type="image/ico" href="img/logoOnly.svg" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -18,8 +17,10 @@
           <a href="#" class="hide-desktop">
             <img src="img/ham.svg" alt="toggle menu" class="toggleMenu" id="toggleMenu">
           </a>
-          <ul class="hide-mobile">
-            <li><img src="img/close.svg" class="exit-btn hide-desktop" alt="exit menu"></li>
+          <ul id="nav">
+            <li class="exit-btn hide-desktop" id="exit">
+              <img src="img/close.svg" alt="exit menu">
+            </li>
             <li><a href="#">Book</a></li>
             <li><a href="#">Schedule</a></li>
             <li><a href="#">Charter</a></li>
@@ -50,9 +51,6 @@
       </div>
     </div>
 
-    <script>
-      function go(){
-      }
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>

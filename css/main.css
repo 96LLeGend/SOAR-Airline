@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Andada');
+
+.hide-mobile{
+  display: none;
+}
+
 body {
   margin: 0;
   font-family: 'Andada', sans-serif;
@@ -10,16 +15,16 @@ ul {
   padding: 0;
 }
 
+a {
+  outline: 0; /*Remove the dot line from outside after click*/
+}
+
 .mainContainer{
   max-width: 1920px;
 }
 
 .logo{
   width: 160px;
-}
-
-.hide-mobile{
-  display: none;
 }
 
 header{
@@ -107,17 +112,21 @@ header{
   padding: 10px 10px 10px 10px;
   border: 1px solid #cccccc;
   overflow: visible;
-  width: calc(100% - 20px);
+  width: calc(100% - 40px);
   margin: -15px 10px 10px 10px;
   font-size: 14px;
 }
 
 .goButton{
-  border: 0px;
+  border: 0; /*Remove the dot line from outside before click*/
   padding: 10px 25px 10px 25px;
   font-size: 14px;
   font-weight: 600;
   background-color: #f4cc70
+}
+
+.goButton::-moz-focus-inner {
+  border: 0; /*Remove the dot line from outside after click*/
 }
 
 .goButton:active{
@@ -127,4 +136,58 @@ header{
 
 .goButton:hover{
   background-color: #5EA8A7;
+}
+
+/*Manu in mobile version*/
+nav ul{
+  position: fixed; /*always at the same place even scoll*/
+  width: 0; /*Javascript will change this*/
+  top: 0;
+  right: 0px;
+  text-align:left;
+  background: rgba(255, 255, 255, 1);
+  height: 100%;
+  z-index: 5; /*high z-index to bring it all the way to the top*/
+  padding-top: 3em;
+  transition: 0.5s;
+}
+
+nav ul li a{
+  color: rgb(49,55,59);
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+nav ul li a:hover{
+  color: #ffffff;
+  background-color: #5EA8A7;
+}
+
+nav ul li a:active{
+  color: #ffffff;
+  background-color: #5EA8A7;
+}
+
+.exit-btn{
+  margin-bottom: 1em;
+  margin-top: -1.3em;
+  text-align: right;
+  padding: 0 1.4em;
+}
+
+.exit-btn img{
+  width: 24px;
+  cursor: pointer;
+}
+
+
+/*For responsive web design*/
+@media only screen and (max-width: 600px){
+  /*Anything smaller than 600px(e.g. a phone) apply these rule*/
+
+
 }
