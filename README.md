@@ -3,3 +3,5 @@ HTML, CSS, Javascript and PHP playground, or the official website of my still-ha
 
 -all .css files are in css folder.
 -all images and icons are in img folder.
+-all javascripts are in js folder.
+
