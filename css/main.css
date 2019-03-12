@@ -19,7 +19,7 @@ a {
   outline: 0; /*Remove the dot line from outside after click*/
 }
 
-.mainContainer{
+.bookContainer{
   max-width: 1920px;
 }
 
@@ -40,13 +40,17 @@ header{
 
 .bookingSection{
   margin-top: 1em;
+  width: 100%;
+  max-height: 560px;
+  overflow: hidden;
 }
 
 .bookingBackground{
   vertical-align: middle;
-  max-width: 100%;
-  min-width: 600px;
-  position:relative;
+  display: block;
+  z-index: -1;
+  min-width: 700px;
+  margin-top: -300px;
 }
 
 .bookingWindow-large{
@@ -59,7 +63,7 @@ header{
 
 .bookingWindow-small{
   position: absolute;
-  top: 120px;
+  top: 150px;
   left: 10%;
   width: 80%;
 }
@@ -141,7 +145,7 @@ header{
 /*Manu in mobile version*/
 nav ul{
   position: fixed; /*always at the same place even scoll*/
-  width: 0; /*Javascript will change this*/
+  width: 0px; /*Javascript will change this*/
   top: 0;
   right: 0px;
   text-align:left;
@@ -184,10 +188,26 @@ nav ul li a:active{
   cursor: pointer;
 }
 
+.offerBackground{
+  background-color: #e6e6e6;
+  text-align: center;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+}
+
+.offerHeadline{
+  color: #555555;
+  font-size: 16px;
+  font-weight: 600;
+}
 
 /*For responsive web design*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
   /*Anything smaller than 600px(e.g. a phone) apply these rule*/
+  .bookingBackground{
+    margin-right: 0px;
+    width: 100%;
+    margin-top: 0px;
+  }
 
 
 }

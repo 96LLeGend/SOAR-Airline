@@ -6,9 +6,12 @@
     <title>SOAR | To Iceland and more</title>
     <link rel="icon" type="image/ico" href="img/logoOnly.svg" />
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
-    <div class="mainContainer">
+    <!-- The first part: nav bar and booking input field, with background image-->
+    <div class="bookContainer">
+      <!--Nav bar and logo-->
       <header>
         <a href="index.html">
           <img src="img/logo.svg" alt="SOAR logo" class="logo">
@@ -29,6 +32,7 @@
         </nav>
       </header>
 
+      <!--Booking input field-->
       <div class="bookingSection">
         <img src="img/background.jpg" alt="snow fall" class="bookingBackground">
 
@@ -48,6 +52,25 @@
           </div>
           <button class="goButton" onclick="go()"><span style ="color : #ffffff;">GO!</span></button>
         </div>
+      </div>
+    </div>
+
+    <!-- Speciall offer section, with slider-->
+    <div class="offerBackground">
+      <span class="offerHeadline">Special Offer</span>
+
+      <!--Sliding cards-->
+      <div class="slideCard">
+        <ul>
+          <li class="slideCardTop">From: London</li>
+          <li class="slideCardMiddle">Revjavik</li>
+          <li>
+            <ul>
+              <li class="slideCardBottomLeft">One way<br>From</li>
+              <li class="slideCardBottomRight"><i class="fas fa-euro-sign" style="font-size: 16px;"></i>100</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
 
