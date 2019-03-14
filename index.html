@@ -34,7 +34,7 @@
 
       <!--Booking input field-->
       <div class="bookingSection">
-        <img src="img/background.jpg" alt="snow fall" class="bookingBackground">
+        <img src="img/main/background.jpg" alt="snow fall" class="bookingBackground">
 
         <div class="bookingWindow-large">
             <span class="headline-large hide-mobile">Book Your Next Adventure</span>
@@ -57,19 +57,20 @@
 
     <!-- Speciall offer section, with slider-->
     <div class="offerBackground">
-      <span class="offerHeadline">Special Offer</span>
+      <span class="offerHeadline">Special Offers</span>
 
       <!--Sliding cards-->
-      <div class="slideCard">
+      <div class="slideCard" onclick="toSpecial()">
         <ul>
-          <li class="slideCardTop">From: London</li>
-          <li class="slideCardMiddle">Revjavik</li>
+          <li class="specialImgContainer"><img src="img/main/LondonSpecial.jpg" alt="London Small" class="specialImg" id="specialImg"></li>
+          <li class="slideCardDes">LONDON</li>
           <li>
-            <ul>
-              <li class="slideCardBottomLeft">One way<br>From</li>
-              <li class="slideCardBottomRight"><i class="fas fa-euro-sign" style="font-size: 16px;"></i>100</li>
+            <ul style="display: flex;">
+              <li class="slideCardBottomLeft"><span>One way<br>From<span></li>
+              <li class="slideCardBottomRight"><i class="fas fa-euro-sign" style="font-size: 24px;"></i>99</li>
             </ul>
           </li>
+          <li class="slideCardGo">Let's Go</li>
         </ul>
       </div>
     </div>

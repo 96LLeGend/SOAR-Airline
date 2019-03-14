@@ -13,6 +13,10 @@ exit.addEventListener('click', function(e){
   e.proventDefault();
 })
 
+function toSpecial(){
+  /*window.location = "http://www.google.com/";*/
+}
+
 function go(){
 
 }
