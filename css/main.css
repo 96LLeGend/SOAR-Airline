@@ -23,21 +23,79 @@ a {
   max-width: 1920px;
 }
 
+/*Manu*/
 .logo{
   width: 160px;
+  margin-top: 1em;
+  margin-left: 1em;
 }
 
 header{
   display: flex;
   justify-content: space-between;
-  margin: 1em 1em 1em 1em;
+  max-height: 86px;
 }
 
 .toggleMenu{
   width: 30px;
   margin-top: 25%;
+  display: none;
 }
 
+nav {
+  margin-right: 0px;
+  height: 100%;
+}
+
+nav ul{
+  display: flex;
+  z-index: 5; /*high z-index to bring it all the way to the top*/
+  height: 100%;
+  width: 100%;
+}
+
+nav ul li{
+  display: block;
+  padding-top: 2em;
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+nav ul li a{
+  color: rgb(49,55,59);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.underline{
+  display: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 2px;
+  margin-top: 20px;
+  background-color: #5EA8A7;
+}
+
+nav ul li:hover .underline{
+  display: block;
+}
+
+.exit-btn{
+  display: none;
+  margin-bottom: 1em;
+  margin-top: -1.3em;
+  text-align: right;
+  padding: 0 1.4em;
+}
+
+.exit-btn img{
+  width: 24px;
+  cursor: pointer;
+}
+
+/*THe booking window*/
 .bookingSection{
   margin-top: 1em;
   width: 100%;
@@ -142,52 +200,6 @@ header{
   background-color: #5EA8A7;
 }
 
-/*Manu in mobile version*/
-nav ul{
-  position: fixed; /*always at the same place even scoll*/
-  width: 0px; /*Javascript will change this*/
-  top: 0;
-  right: 0px;
-  text-align:left;
-  background: rgba(255, 255, 255, 1);
-  height: 100%;
-  z-index: 5; /*high z-index to bring it all the way to the top*/
-  padding-top: 3em;
-  transition: 0.5s;
-}
-
-nav ul li a{
-  color: rgb(49,55,59);
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  padding: 1em 2em;
-  background-color: #ffffff;
-  font-size: 16px;
-}
-
-nav ul li a:hover{
-  color: #ffffff;
-  background-color: #5EA8A7;
-}
-
-nav ul li a:active{
-  color: #ffffff;
-  background-color: #5EA8A7;
-}
-
-.exit-btn{
-  margin-bottom: 1em;
-  margin-top: -1.3em;
-  text-align: right;
-  padding: 0 1.4em;
-}
-
-.exit-btn img{
-  width: 24px;
-  cursor: pointer;
-}
-
 .offerBackground{
   background-color: #f4f4f4;
   text-align: center;
@@ -282,6 +294,43 @@ nav ul li a:active{
 /*For responsive web design*/
 @media only screen and (max-width: 600px){
   /*Anything smaller than 600px(e.g. a phone) apply these rule*/
+
+  /* navigation bar*/
+  .toggleMenu{
+    display: block;
+  }
+
+  nav ul{
+    position: fixed; /*always at the same place even scoll*/
+    display: block;
+    width: 0px; /*Javascript will change this*/
+    text-align: left;
+    background: rgba(255, 255, 255, 1);
+    height: 100%;
+    z-index: 5; /*high z-index to bring it all the way to the top*/
+    padding-top: 3em;
+    transition: 0.5s;
+  }
+
+  nav ul li a{
+    color: rgb(49,55,59);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 16px;
+  }
+
+  nav ul li a:active{
+    color: #ffffff;
+    background-color: #5EA8A7;
+  }
+
+  .exit-btn{
+    display: block;
+  }
+
+  /*the booking background*/
   .bookingBackground{
     margin-right: 0px;
     width: 100%;
